@@ -7,4 +7,6 @@
 *.csv
 *.pdf
 *.Rproj
+data/
+
 
