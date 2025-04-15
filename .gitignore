@@ -2,11 +2,13 @@
 *.Rhistory
 *.RData
 *.Ruserdata
+*.rds
 *.png
 *.xlsx
 *.csv
 *.pdf
 *.Rproj
-data/
+raw_data
 
 
+.Rproj.user

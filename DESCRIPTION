@@ -1,0 +1,15 @@
+Package: DFOfieldnotes
+Type: Package
+Title: Processes Fieldnotes data for publication and generates Fieldnotes Fact Sheets
+Version: 0.1.0
+Author: Freya Keyser
+Maintainer: Freya Keyser <freya.keyser@dfo-mpo.gc.ca>
+Description: Compiles, formats, and validates information from the internal Project Planning Tool to facilitate the publication of Fieldnotes
+    Output will be provided to DFO CDOS for official publication. 
+License: 
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -1,0 +1,16 @@
+---
+title: "Your Document Title"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    template: "../template.tex"
+---
+
+## Introduction
+
+This is an example of a section in your document.
+
+## Background
+
+Here's the next section.

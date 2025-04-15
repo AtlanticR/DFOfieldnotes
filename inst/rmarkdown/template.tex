@@ -1,0 +1,28 @@
+
+\documentclass{article}
+\usepackage[table]{xcolor}
+\usepackage{lipsum} % For dummy text
+
+% Define custom colors
+\definecolor{sectioncolor}{RGB}{255, 204, 204} % Light red
+\definecolor{subsectioncolor}{RGB}{204, 255, 204} % Light green
+
+% Command to color sections
+\newcommand{\coloredsection}[1]{%
+\section{\colorbox{sectioncolor}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}}
+}
+
+% Command to color subsections
+\newcommand{\coloredsubsection}[1]{%
+\subsection{\colorbox{subsectioncolor}{\parbox{\dimexpr\linewidth-2\fboxsep}{#1}}}
+}
+
+\begin{document}
+
+\coloredsection{Introduction}
+\lipsum[1] % Dummy text
+
+\coloredsubsection{Background}
+\lipsum[2] % Dummy text
+
+\end{document}
