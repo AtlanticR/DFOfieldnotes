@@ -1,4 +1,4 @@
-This packages supports the creation of the DFO Fieldnotes publication in Maritimes region.   
+This package supports the creation of the DFO Fieldnotes publication in Maritimes region.   
 
 See instructions in data/vignette.R on pre-requisite steps for running a Fieldnotes report.    
 
