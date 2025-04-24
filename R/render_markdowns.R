@@ -10,8 +10,8 @@
 #' render_markdowns()
 
 render_markdowns <- function(ids = projectids) {
-  Rmdpath <- file.path(system.file(package="DFOfieldnotes"),"rmarkdown","skeleton")
-  #Rmdpath <- "C:/Users/keyserf/Documents/GitHub/DFOfieldnotes/inst/rmarkdown/skeleton"
+  Rmdpath <- file.path(system.file(package="DFOfieldnotes"),"rmarkdown")
+  #Rmdpath <- "C:/Users/keyserf/Documents/GitHub/DFOfieldnotes/inst/rmarkdown"
   # name of the parameterised report rmarkdown
   rmarkdown_file <- file.path(Rmdpath, "parameterised_report.Rmd")
   #print(getwd())

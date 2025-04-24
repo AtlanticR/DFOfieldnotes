@@ -90,15 +90,6 @@ run_report <- function(fiscalyear = "2024-2025",
   if(is.null(projectids)) projectids <- unique(projects$project_id)
   project_id <- projectids
 
-  # c(projects$project_id[grep(x = projects$lead_staff, pattern="Freya")],
-  #               projects$project_id[grep(x = projects$lead_staff, pattern="Mark Billard")],
-  #               projects$project_id[grep(x = projects$lead_staff, pattern="Devred")],
-  #               projects$project_id[grep(x = projects$lead_staff, pattern="Broome")])#,
-  #               # min(projects$project_id[projects$region=="Pacific"]),
-  # max(projects$project_id[projects$region=="Pacific"]),
-  # min(projects$project_id[projects$region=="Gulf"]),
-  # max(projects$project_id[projects$region=="Gulf"])
-  #)
   projects <- projects[projects$project_id %in% project_id,]
 
   ### run scallop example ###
