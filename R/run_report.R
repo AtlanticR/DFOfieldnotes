@@ -133,6 +133,7 @@ run_report <- function(fiscalyear = "2024-2025",
   land.all <- st_transform(land.all, 32619)
 
   # UPDATE THIS TO PULL FROM PPT
+  # NO! This is no longer necessary since David F can make PDFs in the Project Planning Tool!
 
   #get polys
   # source("spatial_selector.R")
