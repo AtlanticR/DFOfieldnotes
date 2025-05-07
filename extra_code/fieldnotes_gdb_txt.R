@@ -24,8 +24,18 @@ direct <- "./raw_data/"
 
 require(sf)
 require(stringr)
-require(dataSPA)
 require(tidyverse)
+
+# get the fieldnotes info from the PPT!
+#require(dataSPA)
+# if Jaimie merges my getData() version into dataSPA, you can use that package and skip the URL read below.
+# for now, you should use the version on my github fork.
+github_getData <- c("https://raw.githubusercontent.com/freyakeyser/dataSPA/refs/heads/master/R/getData.R")
+dir <- tempdir()
+download.file(github_getData, destfile = paste0(dir, "\\", basename(github_getData)))
+source(paste0(dir,"/",basename(github_getData)))
+file.remove(paste0(dir,"/",basename(github_getData)))
+
 fieldnotes <- getData(type="fieldnotes", cookie=cookie, age=1000, keep=T, path = "C:/Users/keyserf/Documents/temp_data/")
 
 # Setting up the target spatial raster
@@ -263,7 +273,6 @@ arc.check_product()
 #ArcPro app must be CLOSED in order for this to work
 arc.write("raw_data/data.gdb/fn", geodatabase, overwrite = T)
 # must open with arcPro
-
 
 # export to txt for translation
 write.csv(attributes, file = "raw_data/attribute_table.csv")
